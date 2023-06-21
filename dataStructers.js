@@ -233,6 +233,5 @@ console.log(data.address.city); // Output: "San Francisco"
 
 
 // * In this example, we access nested values within the `data` object.
-
 // * JSON is widely used for data exchange between client and server applications, as well as for storing and transmitting structured data. 
 // * It provides a standardized format that is easy to read, write, and parse across different programming languages.
