@@ -53,3 +53,4 @@ console.log(localVariable); // ReferenceError: localVariable is not defined
 
 // * typeof is used to return the type of value. this may be primitive or non-primitive
 typeof variableName; //
+
