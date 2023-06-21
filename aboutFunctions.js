@@ -4,7 +4,6 @@
 // * Function Declaration:
 // * A function is defined using the `function` keyword, followed by the function name, a list of parameters (optional), and the function body enclosed in curly braces. 
 
-javascript
 function greet(name) {
   console.log("Hello, " + name + "!");
 }
@@ -35,11 +34,11 @@ console.log(sum); // Output: 5
 
 // * Function Expressions: Functions can also be assigned to variables, creating function expressions. This allows functions to be treated as values and passed around as arguments or stored in data structures. For example:
 
-var greet = function(name) {
+var greets = function(name) {
   console.log("Hello, " + name + "!");
 };
 
-greet("John"); // Output: "Hello, John!"
+greets("John"); // Output: "Hello, John!"
 
 
 // * Anonymous Functions: Anonymous functions are functions without a name. They can be defined as function expressions or passed directly as arguments to other functions. For example:
@@ -67,17 +66,18 @@ console.log(doubled); // Output: [2, 4, 6, 8, 10]
 
 // * Function Scopes and Closures: Functions have their own scope in JavaScript. Variables defined within a function are local to that function unless they are defined as global variables. Closures allow inner functions to access and persist variables from their outer function's scope. For example:
 // * Closures means functions along with the lexical scoping.
-function outer() {
+function outer(a, ...args) {
   var outerVar = "I'm outer";
-  
+  console.log("spread operator :", a, args);
   function inner() {
     console.log(outerVar);
   }
   return inner;
 }
 
-var closure = outer();
+var closure = outer(1, 2, 3, 4, 5);
 closure(); // Output: "I'm outer"
+
 
 
 //TODO usage of function methods
